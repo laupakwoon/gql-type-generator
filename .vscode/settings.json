@@ -1,4 +1,16 @@
 {
+  "workbench.colorTheme": "Default Dark+",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
   "files.associations": {
     ".code-workspace": "jsonc",
     ".babelrc": "json",
@@ -20,53 +32,131 @@
     "**/node_modules": true,
     "**/bower_components": true
   },
-  //
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    { "column": 80, "color": "#fdf39850" },
+    { "column": 120, "color": "#ff33007a" }
+  ],
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  //
-  "todo-tree.general.tags": ["TODO:", "FIXME:"],
-  "todo-tree.highlights.defaultHighlight": {
-    "gutterIcon": true
-  },
-  "todo-tree.highlights.customHighlight": {
-    "TODO:": {
-      "foreground": "#fff",
-      "background": "#ffbd2a",
-      "iconColour": "#ffbd2a"
+  "cSpell.diagnosticLevel": "Warning",
+  "cSpell.words": ["pakwoon", "rawlist"],
+  "better-comments.tags": [
+    {
+      "tag": "bug",
+      "color": "#ff2d00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "FIXME:": {
-      "foreground": "#fff",
-      "background": "#f06292",
-      "icon": "flame",
-      "iconColour": "#f06292"
+    {
+      "tag": "warn",
+      "color": "#fbda32",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#fda633",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "fix",
+      "color": "#a7da2c",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "todo-tree.general.tags": ["bug", "warn", "todo", "fix"],
+  "todo-tree.highlights.customHighlight": {
+    "bug": {
+      "background": "#e05e47",
+      "foreground": "#181818",
+      "borderRadius": "2px",
+      "iconColour": "#e05e47"
+    },
+    "warn": {
+      "background": "#fbda32",
+      "foreground": "#181818",
+      "borderRadius": "2px",
+      "iconColour": "#fbda32"
+    },
+    "todo": {
+      "background": "#fda633",
+      "foreground": "#181818",
+      "borderRadius": "2px",
+      "iconColour": "#fda633"
+    },
+    "fix": {
+      "background": "#a7da2c",
+      "foreground": "#181818",
+      "borderRadius": "2px",
+      "iconColour": "#a7da2c"
     }
   },
-  //
-  "cSpell.diagnosticLevel": "Hint",
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json5]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+    "editor.formatOnSave": true
   },
   "eslint.alwaysShowStatus": true,
   "eslint.run": "onType",
-  "eslint.options": {
-    "rules": {
-      "no-debugger": "off"
-    }
-  },
+  "eslint.options": { "rules": { "no-debugger": "off" } },
   "eslint.probe": [
     "javascript",
     "javascriptreact",
@@ -80,47 +170,5 @@
   "typescript.validate.enable": true,
   "css.validate": false,
   "scss.validate": false,
-  "less.validate": false,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "[less]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.defaultFormatter": "EditorConfig.EditorConfig",
-  "javascript.format.enable": false,
-  "typescript.format.enable": false,
-  //
-  "json.format.enable": false,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2,
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2,
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "less.validate": false
 }
